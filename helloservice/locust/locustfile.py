@@ -9,7 +9,7 @@ class WebsiteUser(HttpUser):
     #     self.client.get("/")
 
     @task
-    def health(self):
-        with self.client.get("/health", catch_response=True) as response:
+    def index(self):
+        with self.client.get("/", catch_response=True) as response:
             if response.status_code == 503:
                 response.success()
