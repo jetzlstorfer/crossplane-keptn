@@ -8,9 +8,9 @@ spec:
       sequences:
         - name: "delivery"
           tasks:
-            - name: "environment-setup"
-              properties:
-                size: "medium"
+            #- name: "environment-setup"
+            #  properties:
+            #    size: "medium"
             - name: "deployment"
               properties:
                 deploymentstrategy: "direct"
