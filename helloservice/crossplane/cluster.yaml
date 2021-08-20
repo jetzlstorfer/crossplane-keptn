@@ -1,0 +1,15 @@
+kind: CivoKubernetes
+apiVersion: cluster.civo.crossplane.io/v1alpha1
+metadata: 
+  name: keptn-crossplane
+spec:
+  name: keptn-crossplane
+  instances: 3
+  size: g3.k3s.small
+  applications: 
+    - "keptn"
+  connectionDetails:
+    connectionSecretNamePrefix: "cluster-details"
+    connectionSecretNamespace: "default"
+  providerConfigRef:
+    name: civo-provider
