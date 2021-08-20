@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: helloservice-primary
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: helloservice-primary
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: helloservice-primary
+    spec:
+      containers:
+      - env:
+        - name: PORT
+          value: "9000"
+        image: gabrieltanner/hello-server:v0.1.1
+        imagePullPolicy: Always
+        name: server
+        ports:
+        - containerPort: 9000
+        resources: {}
+      terminationGracePeriodSeconds: 5
+status: {}
