@@ -6,8 +6,8 @@ spec:
   name: keptn-crossplane
   instances: 1
   size: g3.k3s.small
-  applications: 
-    - "keptn"
+  #applications: 
+  #  - "keptn"
   connectionDetails:
     connectionSecretNamePrefix: "cluster-details"
     connectionSecretNamespace: "default"
