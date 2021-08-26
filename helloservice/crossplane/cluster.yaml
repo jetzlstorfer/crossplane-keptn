@@ -4,7 +4,7 @@ metadata:
   name: keptn-crossplane
 spec:
   name: keptn-crossplane
-  instances: 3
+  instances: 1
   size: g3.k3s.small
   applications: 
     - "keptn"
