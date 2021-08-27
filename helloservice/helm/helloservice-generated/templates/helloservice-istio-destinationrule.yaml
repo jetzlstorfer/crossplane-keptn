@@ -1,7 +1,0 @@
-apiVersion: networking.istio.io/v1alpha3
-kind: DestinationRule
-metadata:
-  creationTimestamp: null
-  name: helloservice
-spec:
-  host: helloservice.crossplane-perf-test.svc.cluster.local
