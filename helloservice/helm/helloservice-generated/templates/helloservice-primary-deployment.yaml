@@ -4,7 +4,7 @@ metadata:
   creationTimestamp: null
   name: helloservice-primary
 spec:
-  replicas: 0
+  replicas: 1
   selector:
     matchLabels:
       app: helloservice-primary
