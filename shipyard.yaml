@@ -19,7 +19,7 @@ spec:
             #    teststrategy: "performance"
             #- name: "evaluation"
             #- name: "release"
-            - name: "environment-teardown"
+            # - name: "environment-teardown"
     - name: "production"
       sequences:
         - name: "delivery"
