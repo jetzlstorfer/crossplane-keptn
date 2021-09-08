@@ -2,5 +2,5 @@
 spec_version: '0.1.0'
 workloads:
   - teststrategy: performance
-    script: locustfile.py
-    conf: locust.conf
+    script: ./locust/locustfile.py
+    conf: ./locust/locust.conf
