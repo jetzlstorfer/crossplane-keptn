@@ -11,7 +11,7 @@ export let options = {
 };
 
 export default function () {
-  const res = http.get('http://helloservice.crossplane-perf-test.svc.cluster.local:80');
+  const res = http.get('http://helloservicse.crossplane-perf-test.svc.cluster.local:80');
   const result = check(res, {
     'status is 200': (r) => r.status == 200,
   });
