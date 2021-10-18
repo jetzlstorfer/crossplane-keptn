@@ -17,8 +17,8 @@ actions:
       - name: "sh.keptn.event.monitoring-setup.triggered"
     tasks:
       - name: "monitoring"
-        #files:
-        #  - prometheus
+        files:
+          - prometheus
         image: "jetzlstorfer/setup-monitoring:0.1"
         cmd:
           - sh
