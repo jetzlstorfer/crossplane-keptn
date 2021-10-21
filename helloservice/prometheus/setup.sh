@@ -44,7 +44,7 @@ kubectl apply -f https://raw.githubusercontent.com/keptn-contrib/prometheus-serv
 
 curl -v -H "Content-Type:application/cloudevents+json" -X POST --data @configure.json http://prometheus-service.keptn:8080
 
-# keptn auth --endpoint=http://34.67.191.73.nip.io/api --api-token=wcw3YyJRBrS2OzziQKIZt3zzUSQMC4oSessgPhgPnwNIy
+# keptn auth --endpoint=http://xxx.nip.io/api --api-token=xxx
 # keptn configure monitoring prometheus --project=crossplane --service=helloservice
 
 
